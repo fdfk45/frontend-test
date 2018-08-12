@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Frontend Test - 26</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+
+    <div class="top-bar"></div>
+
+    <div class="container">
+
+        <p>Cart - Customer Information - Shiping Method - <strong>Payment Method</strong></p>
+
+        <div class="payment-info-and-cart">
+
+            <div class="payment-info">
+
+                <h2>Payment Information</h2>
+
+                <div class="card-number">
+                    <label for="card-number">CARD NUMBER</label>
+                    <input type="password" placeholder="**** **** **** ****">
+                </div>
+
+                <div class="card-holder-info">
+                    <div class="card-holder">
+                        <label for="card-holder">CARD HOLDER</label>
+                        <input type="text" id="card-holder" placeholder="James Doe">
+                    </div>
+
+                    <div class="cc-info">
+
+                        <div class="cc-exp">
+                            <label for="cc-exp">EXP. DATE</label>
+                            <input type="text" placeholder="03/19" id="cc-exp">
+                        </div>
+
+                        <div class="cc-cvc">
+                            <label for="cc-cvc">CVC</label>
+                            <input type="password" placeholder="***" id="cc-cvc">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="cart">
+
+                <div class="order-item">
+                    <div>
+                        <img src="img/order.jpg">
+                        <span>Chocolate bar</span>
+                    </div>
+                    <div>
+                        <span>$2.49</span>
+                    </div>
+                </div>
+
+                <div class="subtotal">
+                    <div>
+                        <span>Subtotal</span>
+                    </div>
+                    <div>
+                        <span>$4.96</span>
+                    </div>
+                </div>
+
+                <div class="shipping">
+                    <div>
+                        <span>Shipping</span>
+                    </div>
+                    <div>
+                        <span>$3.96</span>
+                    </div>
+                </div>
+
+                <div class="total">
+                    <div>
+                        <span>Total</span>
+                    </div>
+                    <div>
+                        <span>$7.98</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="billing-address-container">
+
+            <h2>Billing address</h2>
+            <div class="same-address">
+                <input type="radio" name="billaddress" id="same-address">
+                <label for="same-address">Same as the shipping address</label>
+                <span></span>
+            </div>
+
+            <div class="diff-address">
+                <input type="radio" name="billaddress" id="diff-address">
+                <label for="diff-address">Use a different billing address</label>
+                <span></span>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <a href="#">Return to shipping method</a>
+            <button>Complete order</button>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

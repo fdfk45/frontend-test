@@ -1,0 +1,198 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #2f3049;
+}
+
+.icon-sprite {
+    width: 0;
+    height: 0;
+    display: none;
+}
+
+svg {
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.container {
+    width: 710px;
+    display: flex;
+    background: #fff;
+    margin: 50px auto;
+    border-radius: 5px;
+}
+
+.sidebar {
+    width: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sidebar-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70px;
+    border-right: 1px solid #ddd;
+}
+
+.sidebar-top > svg {
+    fill: #4137ce
+}
+
+.sidebar-main {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #ddd;
+    height: 250px;
+}
+
+.sidebar-main div {
+    width: 68px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar-main div:nth-child(3) svg {
+    fill: #4137ce;
+}
+
+.sidebar-main div:nth-child(3) {
+    border-right: 2px solid #4137ce;
+}
+
+.sidebar-main div:hover {
+    border-right: 2px solid #4137ce;
+}
+
+.sidebar-main div:hover > svg {
+    fill: #4137ce;
+}
+
+.sidebar-main svg {
+    fill: #ddd;
+}
+
+.sidebar-bottom img {
+    width: 50px;
+    border-radius: 50px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 150px;
+    border: 2px solid #4137ce;
+}
+
+.main {
+    width: 600px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.main > span {
+    color: #ddd;
+}
+
+.main .header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.main .header h1 {
+    font-size: 50px;
+}
+
+.main .header button {
+    background: none;
+    width: 100px;
+    height: 35px;
+    border: 1px solid #4137ce;
+    color: #7c71fb;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.main .header button:hover {
+    border: 1.5px solid #4137ce;
+}
+
+.row-1,
+.row-2 {
+
+    height: 200px;
+    display: flex;
+    margin-top: 20px;
+}
+
+.row-1 .row1-first-image {
+    width: 186.66px;
+    height: inherit;
+    margin-right: 20px;
+    position: relative;
+}
+
+.row-1 .row1-second-image {
+    width: 393.34px;
+
+    height: inherit;
+    position: relative;
+}
+
+.row-1 .row1-first-image:hover > .overlay,
+.row-1 .row1-second-image:hover > .overlay {
+    display: block;
+}
+
+.row-1 img,
+.row-2 img {
+    width: inherit;
+    height: inherit;
+}
+
+.row-2 div:not(.overlay) {
+    width: 186.66px;
+    height: inherit;
+
+    position: relative;
+}
+
+.row-2 div:not(:last-child) {
+    margin-right: 20px;
+}
+
+.row-2 div:hover > .overlay {
+    display: block;
+}
+
+.overlay {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    background: #2f3049;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    display: none;
+}
+
+.overlay svg {
+    fill: gray;
+    margin-top: 95px;
+}
+
+.overlay svg:first-child {
+    margin-left: 35%;
+}
+
+.overlay svg:hover {
+    fill: #fff;
+}

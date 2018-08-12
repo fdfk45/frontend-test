@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #2f2f2f;
+}
+
+.container {
+    background: #fdec51;
+    width: 450px;
+    margin: 30px auto;
+    position: relative;
+}
+
+.container > h2 {
+    padding-top: 40px;
+    padding-bottom: 70px;
+    padding-left: 60px;
+    font-weight: 100;
+    position: relative;
+}
+
+.container > h2::before {
+    content: "x";
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+    color: #7e762a;
+}
+
+.container > h2:hover::before {
+    color: #000;
+}
+
+form {
+    background: #fff;
+    position: relative;
+    left: 60px;
+    width: 450px;
+    color: #afadae;
+}
+
+form > img {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    border-radius: 50px;
+    top: -35px;
+    left: 40px;
+}
+
+form > div {
+    margin-left: 50px;
+}
+
+.username {
+    padding-top: 50px;
+}
+
+form div > label {
+    font-size: 13px;
+    display: block;
+    margin-top: 10px;
+    font-weight: bolder;
+}
+
+form div > input,
+form div > textarea {
+    border: 0;
+    border-bottom: 1px solid #f0f0f0;
+    display: block;
+    width: 360px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    outline: none;
+    font-weight: 500;
+}
+
+.first-and-lastname > div {
+    display: inline-block;
+}
+
+.lastname {
+    margin-left: -3px;
+}
+
+.first-and-lastname > div > input {
+    width: 180px;
+}
+
+textarea {
+    resize: vertical;
+    height: 90px;
+}
+
+footer {
+    width: 200px;
+    margin-top: 20px;
+    position: relative;
+    left: 230px;
+    text-align: right;
+}
+
+.bio {
+    padding-bottom: 30px;
+}
+
+footer > button {
+    border: 0;
+    font-size: 17px;
+    padding: 10px;
+    padding-bottom: 20px;
+    cursor: pointer;
+    background: none;
+    outline: none;
+    color: #7e762a;
+}
+
+footer > button:hover {
+    color: #000;
+}

@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #55557e;
+}
+
+.container {
+    width: 400px;
+    margin: 50px auto;
+}
+
+header {
+    display: flex;
+    position: relative;
+    margin-bottom: 90px;
+}
+
+header > div {
+    width: 80px;
+    padding: 15px 40px 13px 25px;
+    background: #3d3e52;
+    position: absolute;
+    cursor: pointer;
+}
+
+header > div:first-child {
+    border-right: 1px solid #aaaabf;
+}
+
+header > div:nth-child(2) {
+    left: 80px;
+}
+
+header > div:nth-child(3) {
+    left: 155px;
+    height: 75px;
+    width: 85px;
+    z-index: 9999;
+    top: -10px;
+    background: #252525;
+    padding: 25px 40px 13px 30px;
+}
+
+header > div:nth-child(4) {
+    left: 240px;
+    border-right: 1px solid #aaaabf;
+}
+
+header > div:nth-child(5) {
+    left: 320px;
+}
+
+.card {
+    width: 350px;
+    margin: 0px auto;
+}
+
+header > div:not(.cafe):hover {
+    background: #252525;
+}
+
+.card-header {
+    width: inherit;
+    height: 200px;
+    background: url(img/food.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    color: #fff;
+}
+
+.card-header > h2 {
+    padding-top: 120px;
+    padding-left: 20px;
+    font-weight: 100;
+}
+
+.card-header > h2 + img {
+    padding-left: 20px;
+    padding-top: 5px;
+    width: 40px;
+}
+
+.card-header > h2 + img + span {
+    position: relative;
+    bottom: 5px;
+}
+
+.card-body {
+    background: #fff;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.card-body > div:first-child {
+    border-bottom: 1px solid;
+}
+
+.card-body > div:nth-child(2) {
+    border-bottom: 1px solid;
+}
+
+.card-body > div:nth-child(3) {
+    border-bottom: 1px solid;
+}
+
+.items {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    padding: 20px;
+    color: #bbb7b4;
+    cursor: pointer;
+}
+
+.items:hover > p:nth-child(2) {
+    color: #000;
+    font-size: 20px;
+}

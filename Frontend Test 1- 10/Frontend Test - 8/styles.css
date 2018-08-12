@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    background: #f9eae8;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 80%;
+    display: flex;
+    margin-top: 50px;
+}
+
+.first-card {
+    width: 350px;
+    background: url(img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.first-card > img {
+    width: 15px;
+    margin-left: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.first-card > span {
+    font-size: 13px;
+    position: relative;
+    bottom: 3px;
+    cursor: pointer;
+}
+
+.second-card {
+    background: #fff;
+    color: #000;
+    width: 600px;
+}
+
+.nav {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: gray;
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+.nav a:hover {
+    color: #000;
+}
+
+.main {
+    margin-left: 100px;
+    width: 400px;
+    margin-top: 100px;
+    position: relative;
+}
+
+.main .line {
+    position: absolute;
+    width: 90px;
+    border: 1.5px solid #000;
+    position: relative;
+    top: -50px;
+    left: 280px;
+}
+
+.main > h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.main > h1 + p {
+    font-family: "Playfair Display", serif;
+}
+
+.city-info {
+    margin-top: 60px;
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.city-pictures {
+    position: relative;
+}
+
+.preview {
+    width: 150px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.play {
+    position: absolute;
+    top: 40px;
+    left: 60px;
+    background: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.play + p {
+    font-size: 13px;
+    font-weight: 450;
+    margin-top: 0;
+    display: inline-block;
+}
+
+.play + p + img {
+    width: 15px;
+    position: relative;
+    top: 3px;
+}
+
+.city-description {
+    margin-left: 50px;
+}
+
+.city-description > p {
+    font-weight: 300;
+    line-height: 25px;
+    margin-top: -5px;
+}

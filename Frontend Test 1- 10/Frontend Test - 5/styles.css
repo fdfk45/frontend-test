@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 400px;
+    background: #fff;
+    border-radius: 5px;
+    margin: 100px 0 100px 0;
+}
+
+.header {
+    display: flex;
+    margin-left: 30px;
+}
+
+.header h1 {
+    margin-bottom: -9px;
+    font-family: Prompt;
+    font-size: 50px;
+    color: #467cd1;
+    margin-top: 30px;
+}
+
+.ams {
+    text-align: right;
+}
+
+.header span {
+    color: #e5e5e6;
+}
+
+.dash {
+    width: 30px;
+    height: 5px;
+    background: #d7e7f6;
+    margin: 70px 50px 0 50px;
+}
+
+.main {
+    width: 300px;
+    display: flex;
+    margin: 50px 0 0 30px;
+}
+
+.main h5 {
+    margin-bottom: 3px;
+    color: gray;
+}
+
+.flight,
+.date {
+    margin-right: 80px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0 30px 30px;
+}
+
+.passenger-info h5 {
+    color: gray;
+}
+
+.passenger-info span {
+    display: block;
+    margin-top: 3px;
+}
+
+.class,
+.departure {
+    margin-top: 22px;
+}
+
+.barcode {
+    margin-right: 20px;
+}
+
+.barcode > img {
+    width: 160px;
+}

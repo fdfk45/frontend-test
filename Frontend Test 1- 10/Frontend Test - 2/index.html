@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Frontend Test - 2</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+
+    <div class="card">
+        <div class="header">
+            <span class="first"></span>
+            <span class="second"></span>
+            <span class="third"></span>
+            <h2>PAYMENT METHOD</h2>
+        </div>
+        <div class="main">
+            <div class="visa">
+                <img src="img/visa.svg" class="payment-type">
+                <input type="radio" value="Visa" id="visa" name="payment">
+                <label for="visa">VISA</label>
+                <img src="img/check.svg">
+            </div>
+
+            <div class="mastercard">
+                <img src="img/mastercard.svg" class="payment-type">
+                <input type="radio" value="Mastercard" id="mastercard" name="payment" checked>
+                <label for="mastercard">MASTERCARD</label>
+                <img src="img/check.svg">
+            </div>
+
+            <div class="maestro">
+                <img src="img/maestro.svg" class="payment-type">
+                <input type="radio" value="Maestro" id="maestro" name="payment">
+                <label for="maestro">MAESTRO</label>
+                <img src="img/check.svg">
+            </div>
+        </div>
+        <div class="footer">
+            <button>NEXT STEP</button>
+            <img src="img/arrow.svg" class="arrow">
+        </div>
+    </div>
+
+</body>
+</html>

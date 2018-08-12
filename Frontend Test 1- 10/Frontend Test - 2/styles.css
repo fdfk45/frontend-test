@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(img/background.jpg);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.card {
+    background: #fff;
+    width: 380px;
+    border-radius: 5px;
+    margin-top: 100px;
+}
+
+.card > .header {
+    text-align: center;
+    border-bottom: 1px solid #dddddd;
+    height: 100px
+}
+
+.card > .header > span {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    background: #dddddd;
+    border-radius: 50%;
+    margin-top: 20px
+}
+
+.card > .header > span + h2 {
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.card > .header > span:first-child {
+    background: gray;
+}
+
+.visa,
+.mastercard,
+.maestro {
+    display: flex;
+    border-bottom: 1px solid #dddddd;
+    height: 60px;
+    cursor: pointer;
+}
+
+.visa:hover,
+.mastercard:hover,
+.maestro:hover {
+    background: #f7f4f4;
+}
+
+.main label {
+    padding: 20px 0 0 0px;
+    color: #dddddd;
+    width: 230px;
+    cursor: pointer;
+}
+
+.payment-type {
+    width: 50px;
+    height: 50px;
+    margin: 5px 0 0 20px;
+}
+
+.footer {
+    width: inherit;
+    height: 60px;
+    position: relative;
+}
+
+.footer > button {
+    width: inherit;
+    height: inherit;
+    border: 0;
+    background: #6577e0;
+    color: #fff;
+    font-size: 14px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+.footer > button:active {
+    box-shadow: 1px -1px #6577e0
+}
+
+.arrow {
+    position: absolute;
+    top: 17px;
+    right: 125px;
+}
+
+.maestro label + img,
+.mastercard label + img,
+.visa label + img {
+    display: none;
+}
+
+input {
+    visibility: hidden
+}
+
+input:checked + label + img {
+    display: block;
+    margin-left: 20px;
+}
+
+input:checked + label {
+    color: #000;
+}

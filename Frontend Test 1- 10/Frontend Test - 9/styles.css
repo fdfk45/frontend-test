@@ -1,0 +1,167 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    background: #F6D46B;
+    display: flex;
+    justify-content: center;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: none;
+    border-radius: 50px;
+}
+
+.first-card:hover::-webkit-scrollbar-thumb,
+.second-card:hover::-webkit-scrollbar-thumb {
+    background: #555;
+}
+
+.card {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.first-card {
+    width: 320px;
+    height: 450px;
+    background: #f2f2f2;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.first-card > .card-header {
+    margin-top: 50px;
+    width: 220px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.first-card > .card-header div {
+    cursor: pointer;
+    display: block;
+}
+
+.payment-card:not(.first-payment-card) {
+    margin-top: 30px;
+}
+
+.payment-card > p:last-child {
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.first-card > div:last-child {
+    margin-bottom: 40px;
+}
+
+.payment-card {
+    width: 220px;
+    height: 110px;
+    background: #fff;
+    color: gray;
+    font-size: 14px;
+    padding-left: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.payment-card:hover {
+    border: 2px solid #8c8ec7;
+}
+
+.payment-card > img {
+    width: 50px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.second-card {
+    width: 530px;
+    height: 450px;
+    overflow-y: scroll;
+    background: #fff;
+}
+
+.second-card > .card-header {
+    display: flex;
+    width: 450px;
+    height: 100px;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+.second-card > div:nth-child(3) {
+    margin-top: 30px;
+}
+
+.second-card > div:not(:first-child) {
+    margin-bottom: 30px;
+}
+
+.transactions {
+    width: 450px;
+    display: flex;
+    margin: auto;
+    position: relative;
+}
+
+.second-card > hr {
+    width: 450px;
+    border: 1px solid #ddd;
+    margin: auto;
+}
+
+.transactions > img {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    margin-top: 25px;
+}
+
+.transaction-info {
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.transaction-info > h3 {
+    margin-bottom: -10px;
+}
+
+.transaction-info > p {
+    font-size: 14px;
+    color: #ddd;
+    margin-top: 15px;
+}
+
+.transactions > p:not(.payment) {
+    position: absolute;
+    right: 0;
+    color: #8c8ec7;
+    top: 35px;
+}
+
+.payment {
+    color: #7de169;
+    position: absolute;
+    right: 0;
+    top: 35px;
+}

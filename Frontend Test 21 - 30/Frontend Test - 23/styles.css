@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    box-sizing: border-box;
+}
+
+@keyframes bounceIn {
+    from,
+    20%,
+    40%,
+    60%,
+    80%,
+    to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+
+    20% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1);
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+
+    40% {
+        -webkit-transform: scale3d(0.9, 0.9, 0.9);
+        transform: scale3d(0.9, 0.9, 0.9);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: scale3d(1.03, 1.03, 1.03);
+        transform: scale3d(1.03, 1.03, 1.03);
+    }
+
+    80% {
+        -webkit-transform: scale3d(0.97, 0.97, 0.97);
+        transform: scale3d(0.97, 0.97, 0.97);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+body {
+    background: #3175BB;
+}
+
+.container {
+    width: 600px;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.container > div:first-child {
+    margin-right: 70px;
+}
+
+.movie-info-container {
+    width: 240px;
+    display: flex;
+    position: relative;
+}
+
+.movie-info-container img {
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    left: 15px;
+    z-index: 1;
+    top: -15px;
+}
+
+.movie-info-container:hover .movie-info-card {
+    display: block;
+    -webkit-animation: bounceIn 0.5s;
+    animation: bounceIn 0.5s;
+}
+
+.movie-info-card {
+    width: 230px;
+    height: 470px;
+    background: #fff;
+    text-align: center;
+    position: relative;
+    border-radius: 5px;
+    display: none;
+}
+
+.movie-info-card h1 {
+    font-size: 16px;
+    margin-top: 295px;
+}
+
+.movie-info-card h1 + p {
+    color: #a9a9a9;
+    font-size: 14px;
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+.movie-info-card .current-price {
+    color: #0fdf7b;
+    margin-top: 20px;
+}
+
+.movie-info-card .previous-price {
+    font-size: 14px;
+    text-decoration: line-through;
+    color: #a9a9a9;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.movie-info-card button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: inherit;
+    border: 0;
+    background: #333333;
+    color: #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bolder;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    outline: none;
+}

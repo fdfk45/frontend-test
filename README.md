@@ -1,0 +1,1 @@
+<p>After few months of taking a break from frontend development coding to focus on my businesses, I decided to work on this project to refresh my mind and test my frontend development skills.</p>

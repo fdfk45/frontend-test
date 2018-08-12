@@ -1,0 +1,184 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    background: #4c4085;
+    width: 420px;
+    height: 350px;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+.months {
+    padding: 0;
+    margin-top: 20px;
+    display: flex;
+    height: 130px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.months div:last-child {
+    margin-right: 0;
+}
+
+.month {
+    width: 20px;
+    box-sizing: border-box;
+    font-size: 12px;
+    color: #aba9c8;
+    font-weight: bolder;
+    margin-right: 25px;
+}
+
+.month p {
+    position: absolute;
+    bottom: 0;
+    text-align: left;
+}
+
+.june {
+    width: inherit;
+    height: 80px;
+    background: #aba9c8;
+    border-radius: 2px;
+    position: absolute;
+    bottom: 25px;
+}
+
+.july {
+    width: inherit;
+    height: 105px;
+    background: #aba9c8;
+    border-radius: 2px;
+    position: absolute;
+    bottom: 25px;
+}
+
+.august {
+    width: inherit;
+    height: 50px;
+    background: #aba9c8;
+    border-radius: 2px;
+    position: absolute;
+    bottom: 25px;
+}
+
+.september {
+    width: inherit;
+    height: 30px;
+    background: #aba9c8;
+    border-radius: 2px;
+    position: absolute;
+    bottom: 25px;
+}
+
+.october {
+    width: inherit;
+    height: 60px;
+    background: #aba9c8;
+    border-radius: 2px;
+    position: absolute;
+    bottom: 25px;
+}
+
+.november {
+    width: inherit;
+    height: 70px;
+    background: #3c8bdf;
+    border-radius: 2px;
+    position: absolute;
+    bottom: 25px;
+}
+
+.december {
+    width: inherit;
+    height: 30px;
+    background: #aba9c8;
+    border-radius: 2px;
+    position: absolute;
+    bottom: 25px;
+}
+
+.december-1 {
+    width: inherit;
+    height: 105px;
+    background: #aba9c8;
+    border-radius: 2px;
+    position: absolute;
+    bottom: 25px;
+}
+
+.december-2 {
+    width: inherit;
+    height: 60px;
+    background: #aba9c8;
+    border-radius: 2px;
+    position: absolute;
+    bottom: 25px;
+}
+
+.december-3 {
+    width: inherit;
+    height: 70px;
+    background: #aba9c8;
+    border-radius: 2px;
+    position: absolute;
+    bottom: 25px;
+}
+
+.chart-container {
+    display: flex;
+    margin-top: 50px;
+}
+
+.chart {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    border-top: 10px solid #00de6c;
+    border-left: 10px solid #a825b7;
+    border-right: 10px solid #3c8bdf;
+    border-bottom: 10px solid #f79e00;
+    border-radius: 60%;
+    color: #fff;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.chart p {
+    font-size: 13px;
+    padding-top: 35px;
+    padding-left: 15px;
+    font-weight: 600;
+}
+
+.chart-details {
+    margin-left: 30px;
+    color: #c8c4db;
+    font-weight: 500;
+}
+
+.chart-details p:nth-child(2) {
+    color: #fff;
+    margin-top: 5px;
+}
+
+.chart-details p:nth-child(3) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.chart-details p:nth-child(3) span {
+    color: #fff;
+}
+
+.chart-details p:nth-child(4) span {
+    color: #fff;
+}

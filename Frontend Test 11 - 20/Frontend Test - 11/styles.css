@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #de8a89;
+}
+
+.container {
+    width: 840px;
+    margin: 100px auto;
+    position: relative;
+}
+
+.container > header {
+    display: flex;
+}
+
+.container > header > h1 {
+    display: block;
+    font-size: 50px;
+    color: #ecb9b8;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.container > header > h1:not(:last-child) {
+    margin-right: 60px;
+}
+
+.first {
+    color: #fff !important;
+}
+
+.container header > h1:not(.first):hover {
+    color: #f9d2d1;
+}
+
+.container > header + p {
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.cards {
+    display: flex;
+    position: relative;
+}
+
+.left-nav {
+    position: absolute;
+    background: #ecb9b8;
+    left: -90px;
+    width: 90px;
+    height: 90px;
+    padding-top: 40px;
+    padding-left: 40px;
+    color: #855352;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.right-nav {
+    position: absolute;
+    background: #ecb9b8;
+    right: -90px;
+    width: 90px;
+    height: 90px;
+    padding-left: 40px;
+    padding-top: 40px;
+    color: #855352;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.left-nav:hover,
+.right-nav:hover {
+    background: #f9d2d1;
+}
+
+.timer {
+    background: #3e3c3d;
+    color: #fff;
+    width: 280px;
+    height: 290px;
+    padding-top: 120px;
+    padding-left: 40px;
+    line-height: 30px;
+}
+
+.temperature {
+    background: #353334;
+    color: #fff;
+    width: 280px;
+    height: 290px;
+    padding-top: 120px;
+    padding-left: 40px;
+    line-height: 30px;
+}
+
+.load {
+    background: #201e1f;
+    color: #fff;
+    width: 280px;
+    height: 290px;
+    padding-top: 120px;
+    padding-left: 40px;
+    line-height: 30px;
+}
+
+.cards h5 {
+    font-size: 18px;
+    color: #de8a89;
+    font-weight: 100;
+}
+
+.container > button {
+    width: 250px;
+    padding: 15px;
+    background: #000;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    font-size: 20px;
+    position: absolute;
+    bottom: -20px;
+    left: 15px;
+    cursor: pointer;
+    outline: none;
+}
+
+.container > button:hover {
+    bottom: -18px;
+}

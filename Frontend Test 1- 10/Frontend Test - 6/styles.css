@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #4f505e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background: #fff;
+    display: flex;
+    border-radius: 5px;
+    margin: 50px 0 50px 0;
+}
+
+.signup-instructions {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    align-items: center;
+}
+
+.signup-instructions > h1 {
+    margin: 50px 0 10px -240px;
+    font-weight: 100;
+}
+
+.signup-instructions > h1 + p {
+    color: #ddd;
+    margin: 0 0 50px -120px;
+    font-size: 15px;
+}
+
+.signup-instructions > button {
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 500px;
+    background: none;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    color: gray;
+    font-weight: bold;
+}
+
+.signup-instructions > button:hover {
+    box-shadow: 1px 1px 1px 1px #ddd;
+}
+
+button > img {
+    width: 20px;
+    position: absolute;
+    left: 15px;
+}
+
+.signup-img {
+    width: 350px;
+    background: url(img/side.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+hr {
+    width: inherit;
+    margin-top: 50px;
+    border: 1px solid #ddd;
+}
+
+.alt-signup {
+    width: 500px;
+    display: flex;
+    padding-top: 25px;
+    font-size: 14px;
+    height: 70px;
+    justify-content: space-between;
+}
+
+.alt-signup a {
+    text-decoration: none;
+    color: gray;
+    display: block;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.alt-signup a:hover {
+    color: #000;
+}

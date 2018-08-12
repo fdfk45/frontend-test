@@ -1,0 +1,234 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #7100eb;
+}
+
+.container {
+    width: 800px;
+    height: 550px;
+    margin: 50px auto;
+    display: flex;
+}
+
+.first-card {
+    width: 350px;
+    height: 550px;
+    background: #ee4694;
+    position: relative;
+    border-radius: 5px;
+}
+
+.first-card p {
+    font-size: 280px;
+    text-align: center;
+    color: #fff;
+    opacity: 0.5;
+    position: relative;
+    top: -40px;
+}
+
+.preview {
+    position: relative;
+    left: -100px;
+    bottom: 250px;
+}
+
+.preview > img {
+    width: 400px;
+    display: block;
+}
+
+.preview span {
+    display: inline-block;
+    background: #7900f7;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    padding-left: 8px;
+    padding-top: 3px;
+    cursor: pointer;
+}
+
+.preview .first {
+    position: absolute;
+    top: 60px;
+    left: 100px;
+}
+
+.preview .second {
+    position: absolute;
+    top: 190px;
+    left: 190px;
+}
+
+.preview .third {
+    position: absolute;
+    top: 240px;
+    left: 330px;
+}
+
+.nav {
+    position: absolute;
+    bottom: 30px;
+    left: 38%;
+}
+
+.nav span {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background: #fff;
+    border-radius: 50px;
+    margin-left: 10px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.nav span:nth-child(2) {
+    opacity: 1;
+}
+
+.nav span:hover {
+    opacity: 1;
+}
+
+.logo {
+    width: 30px;
+    display: block;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.second-card {
+    width: 500px;
+}
+
+.second-card {
+    background: #fff;
+    width: 450px;
+    height: 500px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.second-card > div {
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.second-card > div h1 ~ span {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.second-card > div h1 + span {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.second-card > div h1 + span + span {
+    color: #ddd;
+    font-size: 13px;
+    margin-left: 20px;
+}
+
+.second-card > div p {
+    font-weight: 300;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.size {
+    display: flex;
+    color: #ddd;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.size > span {
+    width: 100px;
+}
+
+.size div > span:not(:last-child) {
+    margin-right: 20px;
+}
+
+.size div {
+    display: flex;
+}
+
+.size div > span {
+    display: block;
+    height: 35px;
+    border-radius: 60%;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+
+.size div > span:hover {
+    color: #ee4694;
+    border: 1px solid #ee4694;
+}
+
+.amount {
+    display: flex;
+}
+
+.amount > span {
+    width: 100px;
+    color: #ddd;
+    font-size: 20px;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.amount div span:nth-child(2) {
+    font-size: 19px;
+    font-weight: bolder;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    top: 1px;
+}
+
+.amount div span:first-child {
+    color: #ee4694;
+    cursor: pointer;
+}
+
+.amount div span:last-child {
+    color: #ee4694;
+    cursor: pointer;
+}
+
+.second-card > div button {
+    display: block;
+    width: 250px;
+    background: #f22e33;
+    color: #fff;
+    border: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 40px;
+    cursor: pointer;
+    outline: none;
+}
+
+.second-card > div button:hover {
+    position: relative;
+    bottom: 5px;
+}

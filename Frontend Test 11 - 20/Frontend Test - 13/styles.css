@@ -1,0 +1,177 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #b386e7;
+    color: #fff;
+}
+
+.card {
+    width: 300px;
+    margin: 150px auto;
+    background: linear-gradient(to right, #bb7eda, #a97ad2);
+    position: relative;
+    border-radius: 4px;
+}
+
+.photo {
+    width: 20px;
+    height: 20px;
+    margin-top: 40px;
+    margin-left: 20px;
+    display: inline-block;
+    background: #fff;
+    border-radius: 50px;
+    position: relative;
+    padding-left: 3px;
+    padding-top: 2px;
+    margin-bottom: 20px;
+}
+
+.photo > img {
+    width: 15px;
+}
+
+.photo::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 40px;
+    background: #fff;
+    top: -40px;
+    left: 45%;
+}
+
+.photo + span {
+    position: absolute;
+    top: 41px;
+    left: 50px;
+    font-weight: 500;
+}
+
+.arrow {
+    position: absolute;
+    right: 30px;
+    top: 41px;
+}
+
+main {
+    background: #5f5280;
+}
+
+main > ul {
+    margin-left: 45px;
+}
+
+main > ul > li {
+    padding: 8px;
+    color: #e4e1ed;
+    cursor: pointer;
+}
+
+main > ul > li:hover {
+    color: #fff;
+}
+
+main > ul > li:first-child {
+    padding-top: 25px;
+    position: relative;
+}
+
+main > ul > li:first-child::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 25px;
+    left: -15px;
+    top: 0;
+    background: #afa9c0;
+}
+
+main > ul > li:nth-child(2) {
+    position: relative;
+}
+
+main > ul > li:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 18px;
+    left: -15px;
+    top: -8px;
+    background: #afa9c0;
+}
+
+main > ul > li:nth-child(2)::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 18px;
+    left: -15px;
+    top: 26px;
+    background: #afa9c0;
+}
+
+main > ul > li:last-child {
+    padding-bottom: 20px;
+    position: relative;
+}
+
+main > ul > li:last-child::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 21px;
+    left: -15px;
+    top: 26px;
+    background: #afa9c0;
+}
+
+.folder {
+    width: 20px;
+    height: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    display: inline-block;
+    background: #fff;
+    border-radius: 50px;
+    position: relative;
+    padding-left: 3px;
+    padding-top: 3px;
+    margin-bottom: 20px;
+}
+
+.folder::before {
+    content: " ";
+    position: absolute;
+    width: 2px;
+    height: 20px;
+    background: #fff;
+    top: -20px;
+    left: 51%;
+}
+
+.folder::after {
+    content: " ";
+    position: absolute;
+    width: 2px;
+    height: 20px;
+    background: #fff;
+    top: 20px;
+    left: 51%;
+}
+
+.folder > img {
+    width: 15px;
+}
+
+.folder + span {
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    font-weight: 500;
+}

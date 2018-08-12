@@ -1,0 +1,400 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    background: #a4bcf5;
+}
+
+.container {
+    width: 850px;
+    height: 650px;
+    margin: 50px auto;
+    background: #fff;
+    overflow: hidden;
+}
+
+.jumbotron {
+    width: inherit;
+    height: 180px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    color: #fff;
+    background: url(img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0;
+}
+
+.jumbotron .overlay {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    background: #000;
+    z-index: 1;
+    opacity: 0.5;
+}
+
+.weather-temp {
+    display: flex;
+    margin-top: 50px;
+    margin-left: 50px;
+    text-align: center;
+    height: 100px;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+.weather-temp div:not(:first-child) {
+    margin-left: 30px;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+
+.weather-temp div:first-child i {
+    font-size: 40px;
+}
+
+.weather-temp div:first-child p {
+    font-size: 40px;
+}
+
+.date-and-time {
+    display: flex;
+    margin-top: 70px;
+    margin-right: 50px;
+    height: 100px;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+
+.date-and-time .date {
+    text-align: right;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.date-and-time .time span {
+    font-size: 40px;
+}
+
+nav div {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 130px;
+}
+
+nav div a {
+    text-decoration: none;
+    color: #d0d0d1;
+    display: block;
+}
+
+nav div a:not(:first-child) {
+    margin-left: 20px;
+}
+
+nav div a:not(:first-child):hover {
+    color: #000;
+}
+
+nav div a:first-child {
+    color: #000;
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.tv-programs {
+    display: inline-flex;
+    position: relative;
+    width: inherit;
+    height: 200px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #d0d0d1;
+}
+
+.tv-programs .tv-program {
+    width: 175px;
+    height: 180px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.tv-programs .tv-program div {
+    width: 175px;
+    height: 100px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.tv-programs .tv-program div ~ p {
+    font-size: 14px;
+}
+
+.tv-programs .tv-program div + p {
+    color: #d0d0d1;
+    margin-top: 10px;
+}
+
+.tv-programs .tv-program div + p + p {
+    margin-top: 5px;
+}
+
+.tv-programs > div:first-child {
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.tv-programs > div:first-child i {
+    display: block;
+    margin-top: 40px;
+    color: #b3c7f4;
+}
+
+.tv-programs .tv-program div img {
+    width: inherit;
+    height: inherit;
+}
+
+.tv-programs > div:nth-child(1) {
+    position: absolute;
+}
+
+.tv-programs > div:nth-child(2) {
+    position: absolute;
+    left: 100px;
+}
+
+.tv-programs > div:nth-child(3) {
+    position: absolute;
+    left: 275px;
+}
+
+.tv-programs > div:nth-child(4) {
+    position: absolute;
+    left: 425px;
+    top: -10px;
+    z-index: 1;
+}
+
+.tv-programs > div:nth-child(4) div {
+    width: 200px;
+    height: 120px;
+}
+
+.tv-programs > div:nth-child(5) {
+    position: absolute;
+    left: 625px;
+}
+
+.tv-programs > div:nth-child(6) {
+    position: absolute;
+    left: 800px;
+}
+
+.tv-program div .overlay {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .3);
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.tv-program div .overlay i {
+    display: block;
+    margin-top: 35px;
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, .7);
+    color: #fff;
+    border-radius: 50px;
+    padding-left: 8px;
+    padding-top: 8px;
+    display: none;
+}
+
+.tv-programs div .overlay:hover i {
+    display: block;
+}
+
+.tv-programs::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 5px;
+    background: #b3c7f4;
+    border-radius: 50px;
+    bottom: -3px;
+    left: 45%;
+}
+
+.music {
+    display: inline-flex;
+    margin-top: 30px;
+    position: relative;
+}
+
+.music .music-icon {
+    width: 100px;
+    height: 130px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.music .music-icon i {
+    display: block;
+    margin-top: 40px;
+    color: #b3c7f4;
+}
+
+.music-playing {
+    width: 350px;
+    height: 130px;
+}
+
+.music-info {
+    display: flex;
+}
+
+.music-info img {
+    width: 80px;
+    height: 80px;
+}
+
+.music-info div {
+    margin-left: 20px;
+}
+
+.music-info div p:first-child {
+    margin-top: 15px;
+}
+
+.music-info div p:last-child {
+    color: #d0d0d1;
+    margin-top: 5px;
+}
+
+.music-duration {
+    display: flex;
+    margin-top: 10px;
+}
+
+.music-duration span {
+    color: #d0d0d1;
+}
+
+.duration-indicator {
+    width: 250px;
+    height: 2px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    background: #d0d0d1;
+}
+
+.duration-indicator div {
+    width: 40%;
+    height: inherit;
+    background: #000;
+    position: relative;
+}
+
+.duration-indicator div::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #000;
+    right: 0;
+    bottom: -3px;
+    border-radius: 50px;
+}
+
+.music-cover {
+    text-align: center;
+    width: 100px;
+    height: 130px;
+    box-sizing: border-box;
+}
+
+.music-cover div {
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+.music-cover div .overlay {
+    position: absolute;
+    width: inherit;
+    height: 100px;
+    background: #000;
+    top: 0;
+    left: 0;
+    opacity: 0.5
+}
+
+.music-cover p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    position: relative;
+    bottom: -10px;
+    font-size: 13px;
+}
+
+.music-cover div img {
+    width: inherit;
+    height: inherit;
+}
+
+.music > div:nth-child(1) {
+    position: absolute;
+}
+
+.music > div:nth-child(2) {
+    position: absolute;
+    left: 100px;
+}
+
+.music > div:nth-child(3) {
+    position: absolute;
+    left: 510px;
+    z-index: 1;
+    top: -5px;
+}
+
+.music > div:nth-child(3) div {
+    width: 110px;
+    height: 110px;
+}
+
+.music > div:nth-child(4) {
+    position: absolute;
+    left: 600px;
+}
+
+.music > div:nth-child(5) {
+    position: absolute;
+    left: 700px;
+}
+
+.music > div:nth-child(6) {
+    position: absolute;
+    left: 800px;
+}
