@@ -61,3 +61,7 @@ Frontend Test - 28  ==> https://codepen.io/theambitiousgeek/full/KBEzBV/
 Frontend Test - 29  ==> https://codepen.io/theambitiousgeek/full/wxOGQw/
 
 Frontend Test - 30  ==> https://codepen.io/theambitiousgeek/full/EpMKOw/
+
+
+<strong>Project inspired by <a href="https://github.com/BananaBobby">Dmitry Belyaev
+</a> <a href="https://frontloops.io/">FrontLoops</a> project</strong>
