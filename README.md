@@ -1,4 +1,4 @@
-<p>After few months of taking a break from frontend development coding to focus on my businesses, I decided to work on this project to refresh my mind and test my frontend development skills. Below is a link to each project on my <a href="https://codepen.io/theambitiousgeek" target="_blank">Codepen profile</a></p>
+<strong>After few months of taking a break from frontend development coding to focus on my businesses, I decided to work on this project to refresh my mind and test my frontend development skills. Below is a link to each project on my <a href="https://codepen.io/theambitiousgeek" target="_blank">Codepen profile</a></strong>
 
 
 
